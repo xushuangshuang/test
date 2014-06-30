@@ -11,7 +11,12 @@ public class FizzBuzzTest
 		judgeEquals("1", actualResult);
 		actualResult = fizzBuzz.say(2);
 		judgeEquals("2", actualResult);
+		
+		outputResult();
+	}
 
+	public static void outputResult()
+	{
 		if(judgeResult)
 		{
 			System.out.println("TEST SUCCESS");
@@ -20,8 +25,8 @@ public class FizzBuzzTest
 		{
 			System.out.println("TEST FAIL");
 		}
-		
 	}
+
 	public static void judgeEquals(String expectedResult, String actualResult)
 	{
 		if(false == expectedResult.equals(actualResult))
