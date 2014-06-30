@@ -9,7 +9,7 @@ public class FizzBuzzTest
 		
 		judgeEquals("1", fizzBuzz.say(1));
 		judgeEquals("2", fizzBuzz.say(2));
-		
+		judgeEquals("FIZZ", fizzBuzz.say(3));
 		outputResult();
 	}
 
