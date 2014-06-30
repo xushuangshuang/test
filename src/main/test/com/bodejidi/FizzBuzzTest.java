@@ -5,12 +5,26 @@ public class FizzBuzzTest
     	static boolean judgeResult = true;
 	public static void main(String[] args)
 	{
-		FizzBuzz fizzBuzz = new FizzBuzz();
-		
-		judgeEquals("1", fizzBuzz.say(1));
-		judgeEquals("2", fizzBuzz.say(2));
-		judgeEquals("FIZZ", fizzBuzz.say(3));
+		test_should_be_1();
+		test_should_be_2();
+		test_should_be_3();
 		outputResult();
+	}
+
+	public static void test_should_be_1()
+	{
+		FizzBuzz fizzBuzz1 = new FizzBuzz();
+		judgeEquals("1", fizzBuzz1.say(1));
+	}
+	public static void test_should_be_2()
+	{
+		FizzBuzz fizzBuzz2 = new FizzBuzz();
+		judgeEquals("2", fizzBuzz2.say(2));
+	}
+	public static void test_should_be_3()
+	{
+		FizzBuzz fizzBuzz3 = new FizzBuzz();
+		judgeEquals("FIZZ", fizzBuzz3.say(3));
 	}
 
 	public static void outputResult()
