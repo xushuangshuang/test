@@ -2,10 +2,13 @@ package com.bodejidi;
 
 public class FizzBuzzTest
 {
+
+    	
 	public static void main(String[] args)
 	{
 		FizzBuzz fizzBuzz = new FizzBuzz();
-		boolean judgeResult = true;
+		
+		static boolean judgeResult = true;
 		String actualResult = fizzBuzz.say(1);
 
 		if(false == "1".equals(actualResult))
