@@ -7,10 +7,8 @@ public class FizzBuzzTest
 	{
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		
-		String actualResult = fizzBuzz.say(1);
-		judgeEquals("1", actualResult);
-		actualResult = fizzBuzz.say(2);
-		judgeEquals("2", actualResult);
+		judgeEquals("1", fizzBuzz.say(1));
+		judgeEquals("2", fizzBuzz.say(2));
 		
 		outputResult();
 	}
