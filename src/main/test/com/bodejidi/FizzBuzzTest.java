@@ -2,29 +2,15 @@ package com.bodejidi;
 
 public class FizzBuzzTest
 {
-
-    	
+    	static boolean judgeResult = true;
 	public static void main(String[] args)
 	{
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		
-		static boolean judgeResult = true;
 		String actualResult = fizzBuzz.say(1);
-
-		if(false == "1".equals(actualResult))
-		{
-			judgeResult = false;
-			System.out.println("EXCEPTION : "+ "1" + " BUT " + actualResult );
-		}
-		
+		judgeEquals("1", actualResult);
 		actualResult = fizzBuzz.say(2);
-
-		if(false == "2".equals(actualResult))
-		{
-		    	judgeResult = false;
-			System.out.println("EXCEPTION : "+ "2" + " BUT " + actualResult );
-		}
-
+		judgeEquals("2", actualResult);
 
 		if(judgeResult)
 		{
@@ -34,6 +20,14 @@ public class FizzBuzzTest
 		{
 			System.out.println("TEST FAIL");
 		}
-
+		
+	}
+	public static void judgeEquals(String expectedResult, String actualResult)
+	{
+		if(false == expectedResult.equals(actualResult))
+		{
+			judgeResult = false;
+			System.out.println("EXCEPTION : "+ expectedResult + " BUT " + actualResult );
+		}
 	}
 }
