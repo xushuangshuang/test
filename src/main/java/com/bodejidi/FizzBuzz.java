@@ -4,6 +4,6 @@ public class FizzBuzz
 {
 	public String say(Integer num)
 	{
-		return null;
+		return String.valueOf(num);
 	}
 }
